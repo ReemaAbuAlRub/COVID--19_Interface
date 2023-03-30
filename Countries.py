@@ -13,7 +13,7 @@ import re
 from sklearn.metrics import mean_squared_error
 
 #df=pd.read_csv('//Users//reema//Desktop//Research//Streamlit//pages//COVID19_Data.csv')
-df=pd.read_csv('//Users//reema//Desktop//Research//Streamlit//pages//COVID19 Data 2.csv')
+df=pd.read_csv('COVID19 Data 2.csv')
 
 st.title('General Overview Per Country')
 
