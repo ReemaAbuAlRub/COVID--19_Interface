@@ -6,15 +6,15 @@ import numpy as np
 from datetime import date, timedelta
 from datetime import datetime as dt
 import plotly.express as px
-from zipfile import ZipFile
+from zipfile import ZipFile as zipfile
 from dateutil.relativedelta import relativedelta
 import xgboost as xgb
 import re
 from sklearn.metrics import mean_squared_error
 
 #df=pd.read_csv('//Users//reema//Desktop//Research//Streamlit//pages//COVID19_Data.csv')
-with ZipFile('COVID19 Data 2.csv.zip', 'r') as zip:
-  zip.extractall()
+with zipfile('COVID19 Data 2.csv.zip', 'r') as zipf:
+  zipf.extractall()
 
 df=pd.read_csv('COVID19 Data 2.csv')
 
